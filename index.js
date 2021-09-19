@@ -24,14 +24,17 @@ class Card {
     }
   
     render(element) {
-      let fullComponent =
-        "<div class='w-1/3 mx-10 border rounded-xl'>" +
-        this.createImageComponent() +
-        this.createHeadingComponent() +
-        this.createParagraphComponent() +
-        this.createButtonComponent() +
-        "</div>";
-      element.innerHTML = fullComponent + fullComponent + fullComponent;
+        let fullComponent = '';
+        for(let i=0; i<3; i++ ){
+            fullComponent += "<div class='w-1/3 mx-10 border rounded-xl'>" +
+            this.createImageComponent() +
+            this.createHeadingComponent() +
+            this.createParagraphComponent() +
+            this.createButtonComponent() +
+            "</div>";
+        }
+        
+      element.innerHTML = fullComponent;
     }
   }
   
