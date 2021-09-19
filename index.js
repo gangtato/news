@@ -24,7 +24,12 @@ class Card{
     }
 
     render(element){
-        let fullComponent = this.createImageComponent + this.createHeadingComponent + this.createParagraphComponent + this.createButtonComponent;
+        let fullComponent = "<div class='w-full flex flex-row'>" +
+                             this.createImageComponent + 
+                             this.createHeadingComponent + 
+                             this.createParagraphComponent + 
+                             this.createButtonComponent +
+                             "<div>";
         element.innerHtml = fullComponent;
     }
 }
