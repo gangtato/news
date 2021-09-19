@@ -31,7 +31,7 @@ class Card {
         this.createParagraphComponent() +
         this.createButtonComponent() +
         "</div>";
-      element.innerHTML = fullComponent;
+      element.innerHTML = fullComponent + fullComponent + fullComponent;
     }
   }
   
