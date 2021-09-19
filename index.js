@@ -36,4 +36,6 @@ class Card{
 
 const app = new Card();
 
-app.render(document.getElementById('cardcomponent'));
+let card = document.getElementById('cardcomponent');
+
+app.render(card);
