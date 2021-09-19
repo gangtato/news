@@ -15,9 +15,9 @@
       <h1 class="text-lg leading-loose">News App</h1>
     </div>
     <div class="w-full text-center">
-      <input class="border px-2 py-2 mx-10 my-10 w-2/3" placeholder="Search" />
+      <input onkeyup="searchNews()" id="search" class="border px-2 py-2 mx-10 my-10 w-2/3" placeholder="Search" />
     </div>
-    <div id="cardcomponent" class="w-full flex flex-row"></div>
+    <div id="cardcomponent" class="grid grid-cols-3 gap-4"></div>
     <script src="index.js"></script>
   </body>
 </html>
