@@ -1,19 +1,19 @@
 class Card{ 
 
-    createImageComponent(data){
-        data = 'https://i.insider.com/6146891fa060c800184bd84c?width=1200&format=jpeg';
+    createImageComponent(){
+        let data = 'https://i.insider.com/6146891fa060c800184bd84c?width=1200&format=jpeg';
         let image = `<img class="rounded-t-xl" src='${data}' />`;
         return image;
     }
 
-    createHeadingComponent(data){
-        data = 'Title';
+    createHeadingComponent(){
+        let data = 'Title';
         let heading = `<h1 class="text-center mx-2 my-2">${data}</h1>`;
         return heading;
     }
 
-    createParagraphComponent(data){
-        data = 'Paragraph';
+    createParagraphComponent(){
+        let data = 'Paragraph';
         let paragraph = `<p class="mx-2 my-2">${data}</p>`;
         return paragraph;
     }
