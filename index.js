@@ -25,10 +25,10 @@ class Card{
 
     render(element){
         let fullComponent = "<div class='w-full flex flex-row'>" +
-                             this.createImageComponent + 
-                             this.createHeadingComponent + 
-                             this.createParagraphComponent + 
-                             this.createButtonComponent +
+                             this.createImageComponent() + 
+                             this.createHeadingComponent() + 
+                             this.createParagraphComponent() + 
+                             this.createButtonComponent() +
                              "<div>";
         element.innerHtml = fullComponent;
     }
